@@ -16,6 +16,7 @@ const Home = () => {
     <>
       <Navbar />  
       <div className='container' style={containerStyle}>
+        <h1 style={{fontWeight: 300,fontSize: '3rem'}}>Seismic Exploration and Investigation of Stellar Tectonic Activity Research</h1>
     <Video />
     <FlowChart />
     <ProfileGrid />

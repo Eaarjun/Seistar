@@ -14,11 +14,49 @@ body, html {
 }
 
 
-
-
 .about {
   padding: 20px; /* Add padding for spacing */
   background-color: white; /* Background color for visibility */
   min-height: 100vh; /* Ensures it takes up the full viewport height */
   margin-top: 20px; /* Space between the scene and About section */
+}
+
+.introduction-container {
+  width: 80%; /* Set the desired width */
+  margin: 0 auto; /* Center the container */
+  height: auto; /* Allow height to adapt */
+  margin-top: 2%;
+  padding: 1rem; /* Add some padding for better spacing */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+.intro-title {
+  font-weight: 300;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.keyPoints {
+  padding: 0;
+}
+
+.keyPoint {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .introduction-container {
+      width: 90%; /* Adjust width for mobile */
+      padding: 0.5rem; /* Reduce padding */
+  }
+
+  .intro-title {
+      font-size: 2.5rem; /* Reduce font size for mobile */
+  }
+
+  .keyPoint {
+      font-size: 1.2rem; /* Adjust font size for mobile */
+  }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Linkedin } from 'lucide-react';
 import './contact.css';
 import Shambhavi from '../images/shambhavi.jpg';
-import Arjun from '../images/arjun.jpeg';
+import Arjun from '../images/Arjun.jpg';
 import Akshaya from '../images/akshaya.jpg';
 import Tejas from '../images/tejas.jpg';
 import Sanath from '../images/sanath.jpg';

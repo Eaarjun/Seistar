@@ -39,7 +39,7 @@ const Reference = () => {
     <>
         <Navbar />
         <div style={containerStyle}>
-            <h1 style={{fontWeight: 300,fontSize: '4rem',marginBottom: '2rem'}}>References</h1>
+            <h1 style={{fontWeight: 300,fontSize: '3rem',marginBottom: '2rem'}}>References</h1>
             
             {/* New Section for Data Resource */}
             <h2 style={{marginBottom: '1rem'}}>Data Resource</h2>
