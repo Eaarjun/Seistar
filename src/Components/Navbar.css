@@ -1,96 +1,90 @@
-
-
-/* Navbar.css */
 .navbar {
-    position: sticky; /* Make navbar sticky */
-    top: 0; /* Stick to the top of the viewport */
-    width: 1600px; /* Set fixed width */
-    margin: 20px auto; /* Center navbar horizontally */
-    display: flex; /* Flex layout for centering items */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    background-color: #1E3E62; /* Background color */
-    border-radius: 35px; /* Rounded corners */
-    padding: 10px 20px; /* Padding */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    z-index: 10;
-    
-  }
-  
-  .logo {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center the items */
-    color: #fff; /* Logo color */
-    font-size: 1.5em; /* Logo size */
-    margin-right: 20px; /* Space between logo and links */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E3E62;
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5em;
 }
 
 .logo-image {
-    margin-right: 10px; /* Optional: space between image and text */
-    border-radius: 20px;
+  margin-right: 10px;
+  border-radius: 20px;
 }
+
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  color: #fff;
+  margin: 0 15px;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #1E3E62;
+  padding: 10px 0;
+  border-radius: 0 0 35px 35px;
+}
+
+.nav-links.hide {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu-icon {
+    display: block;
+  }
 
   .nav-links {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Align links in a row */
-    flex-grow: 1; /* Allow links to grow and take space */
-    justify-content: space-evenly; /* Evenly distribute links */
+    display: none;
   }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+
   .nav-links li {
-    color: #fff; /* Link color */
-    margin: 0 15px; /* Space between links */
-    cursor: pointer; /* Change cursor to pointer */
+    margin: 0 10px;
   }
-  
-  .nav-links li:hover {
-    text-decoration: underline; /* Underline effect on hover */
-  }
-/* styles.css */
-.link {
-  color: black; /* Default color */
-  text-decoration: none;
 }
 
-.link.active {
-  color: white; /* Color when active */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .nav-links li {
+    font-size: 0.9em;
+  }
 }
-
-/* Optional: For hover effect */
-.link:hover {
-  color: grey; /* Change color on hover */
-}
-
-
-  @media (max-width: 800px) {
-    .navbar {
-      width: 90%; /* Adjust width for smaller screens */
-      flex-direction: column; /* Stack items vertically */
-      padding: 10px; /* Adjust padding */
-    }
-  
-    .nav-links {
-      flex-direction: column; /* Stack links vertically */
-      align-items: center; /* Center align links */
-    }
-  
-    .nav-links li {
-      margin: 5px 0; /* Space between links */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .logo {
-      font-size: 1.2em; /* Reduce logo size for smaller screens */
-    }
-  }
-  
-
-  @media (max-width: 480px) {
-    .logo {
-      font-size: 1.2em; /* Reduce logo size for smaller screens */
-    }
-  
-    .nav-links li {
-      font-size: 0.9em; /* Slightly smaller font for links */
-    }
-  }
