@@ -1,0 +1,24 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto; /* Allow vertical scrolling */
+  background-image: url("./images/moon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color:white;
+}
+
+
+
+
+.about {
+  padding: 20px; /* Add padding for spacing */
+  background-color: white; /* Background color for visibility */
+  min-height: 100vh; /* Ensures it takes up the full viewport height */
+  margin-top: 20px; /* Space between the scene and About section */
+}

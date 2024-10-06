@@ -1,0 +1,74 @@
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  height: 80px;
+}
+
+.profile-card.white-bg {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex-grow: 1;
+  padding: 0.5rem 1rem;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.profile-profession {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.profile-icons {
+  padding-right: 1rem;
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #4b5563;
+}
+
+@media (max-width: 640px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}

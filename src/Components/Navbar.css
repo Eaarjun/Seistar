@@ -1,0 +1,96 @@
+
+
+/* Navbar.css */
+.navbar {
+    position: sticky; /* Make navbar sticky */
+    top: 0; /* Stick to the top of the viewport */
+    width: 1600px; /* Set fixed width */
+    margin: 20px auto; /* Center navbar horizontally */
+    display: flex; /* Flex layout for centering items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: #1E3E62; /* Background color */
+    border-radius: 35px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    z-index: 10;
+    
+  }
+  
+  .logo {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the items */
+    color: #fff; /* Logo color */
+    font-size: 1.5em; /* Logo size */
+    margin-right: 20px; /* Space between logo and links */
+}
+
+.logo-image {
+    margin-right: 10px; /* Optional: space between image and text */
+    border-radius: 20px;
+}
+
+  .nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align links in a row */
+    flex-grow: 1; /* Allow links to grow and take space */
+    justify-content: space-evenly; /* Evenly distribute links */
+  }
+  .nav-links li {
+    color: #fff; /* Link color */
+    margin: 0 15px; /* Space between links */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .nav-links li:hover {
+    text-decoration: underline; /* Underline effect on hover */
+  }
+/* styles.css */
+.link {
+  color: black; /* Default color */
+  text-decoration: none;
+}
+
+.link.active {
+  color: white; /* Color when active */
+}
+
+/* Optional: For hover effect */
+.link:hover {
+  color: grey; /* Change color on hover */
+}
+
+
+  @media (max-width: 800px) {
+    .navbar {
+      width: 90%; /* Adjust width for smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .nav-links {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center; /* Center align links */
+    }
+  
+    .nav-links li {
+      margin: 5px 0; /* Space between links */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2em; /* Reduce logo size for smaller screens */
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2em; /* Reduce logo size for smaller screens */
+    }
+  
+    .nav-links li {
+      font-size: 0.9em; /* Slightly smaller font for links */
+    }
+  }
