@@ -1,7 +1,8 @@
 .navbar {
   position: sticky;
   top: 0;
-  width: 1600px; 
+  width: 100%;
+  max-width: 1600px; 
   margin: 20px auto; 
   display: flex; 
   justify-content: space-between; 
@@ -11,6 +12,7 @@
   padding: 10px 20px; 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
   z-index: 10;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -19,6 +21,7 @@
   color: #fff; 
   font-size: 1.5em; 
   margin-right: 20px; 
+  white-space: nowrap;
 }
 
 .logo-image {
@@ -31,11 +34,12 @@
   display: flex; 
   flex-grow: 1; 
   justify-content: space-evenly; 
+  flex-wrap: wrap;
 }
 
 .nav-links li {
   color: #fff; 
-  margin: 0 15px; 
+  margin: 5px 15px; 
   cursor: pointer; 
 }
 
@@ -43,42 +47,48 @@
   text-decoration: underline; 
 }
 
-/* Mobile styles */
-.menu-icon {
-  display: none; 
-  cursor: pointer; 
+@media (max-width: 1450px) {
+  .navbar {
+    width: 95%;
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    justify-content: flex-end;
+  }
+
+  .nav-links li {
+    margin: 5px 10px;
+  }
 }
 
-/* Mobile menu */
-.nav-links {
-  display: flex; 
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 1.3em;
+  }
+
+  .nav-links li {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 800px) {
   .navbar {
     width: 90%; 
-    padding: 10px; 
+    flex-direction: column;
+    padding: 10px;
   }
 
   .nav-links {
-    display: block; 
-    flex-direction: column; 
-    align-items: center; 
-    position: absolute; 
-    top: 70px; 
-    left: 0; 
-    right: 0; 
-    background-color: #1E3E62; 
-    border-radius: 0 0 35px 35px; 
-    z-index: 5; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
   }
 
-  .nav-links.active {
-    display: flex; /* Show links when menu is open */
-  }
-
-  .menu-icon {
-    display: block; /* Show hamburger icon on mobile */
+  .nav-links li {
+    margin: 10px 0;
+    font-size: 1em;
   }
 }
 
@@ -87,11 +97,3 @@
     font-size: 1.2em; 
   }
 }
-
-
-/* Mobile styles */
-.menu-icon {
-  display: none; /* Hidden on larger screens */
-}
-
-
