@@ -33,7 +33,7 @@ const FlowChart = () => {
           style={{
             ...imgStyle,
             minWidth: '600px',
-            width: '100%',
+            width: '80%',
             maxWidth: 'none'
           }}
         />
