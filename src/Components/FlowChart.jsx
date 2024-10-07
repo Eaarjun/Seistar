@@ -4,7 +4,7 @@ const FlowChart = () => {
   const imgStyle = {
     width: '100%', // Make image responsive
     height: 'auto', // Maintain aspect ratio
-    maxWidth: '800px', // Limit max width for larger screens
+    maxWidth: '1200px', // Limit max width for larger screens
     margin: '0 auto', // Center image
     display: 'block', // Center block element
 };
