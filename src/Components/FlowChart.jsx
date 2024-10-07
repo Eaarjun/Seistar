@@ -26,15 +26,16 @@ const FlowChart = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+          
       }}>
         <img
           src={Flowchart}
           alt="Flowchart"
           style={{
             ...imgStyle,
-            minWidth: '600px',
-            width: '80%',
-            maxWidth: 'none'
+            minWidth: '400px',
+            width: '100%',
+            maxWidth: 'none',
           }}
         />
       </div>
